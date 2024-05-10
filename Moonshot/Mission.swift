@@ -17,5 +17,13 @@ struct Mission: Codable, Identifiable{
     let id: Int
     let launchDate: String?
     let crew: [CrewRole]
-    let descreption: String
+    let descreption: String?
+    
+    var displayedName: String {
+        "Appollo \(id)"
+    }
+    
+    var image: String {
+        "apollo\(id)"
+    }
 }
