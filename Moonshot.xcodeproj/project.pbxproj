@@ -11,6 +11,11 @@
 		871D6DFC2BEE6A6200557547 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D6DFB2BEE6A6200557547 /* ContentView.swift */; };
 		871D6DFE2BEE6A6300557547 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 871D6DFD2BEE6A6300557547 /* Assets.xcassets */; };
 		871D6E012BEE6A6300557547 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 871D6E002BEE6A6300557547 /* Preview Assets.xcassets */; };
+		871D6E0C2BEE77F700557547 /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D6E0B2BEE77F700557547 /* Astronaut.swift */; };
+		871D6E0E2BEE782E00557547 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D6E0D2BEE782E00557547 /* Bundle-Decodable.swift */; };
+		871D6E112BEE79BC00557547 /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = 871D6E0F2BEE79BC00557547 /* astronauts.json */; };
+		871D6E122BEE79BC00557547 /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = 871D6E102BEE79BC00557547 /* missions.json */; };
+		871D6E142BEE7D6900557547 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D6E132BEE7D6900557547 /* Mission.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		871D6DFB2BEE6A6200557547 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		871D6DFD2BEE6A6300557547 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		871D6E002BEE6A6300557547 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		871D6E0B2BEE77F700557547 /* Astronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronaut.swift; sourceTree = "<group>"; };
+		871D6E0D2BEE782E00557547 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		871D6E0F2BEE79BC00557547 /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
+		871D6E102BEE79BC00557547 /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
+		871D6E132BEE7D6900557547 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,11 @@
 			children = (
 				871D6DF92BEE6A6200557547 /* MoonshotApp.swift */,
 				871D6DFB2BEE6A6200557547 /* ContentView.swift */,
+				871D6E0B2BEE77F700557547 /* Astronaut.swift */,
+				871D6E132BEE7D6900557547 /* Mission.swift */,
+				871D6E0D2BEE782E00557547 /* Bundle-Decodable.swift */,
+				871D6E0F2BEE79BC00557547 /* astronauts.json */,
+				871D6E102BEE79BC00557547 /* missions.json */,
 				871D6DFD2BEE6A6300557547 /* Assets.xcassets */,
 				871D6DFF2BEE6A6300557547 /* Preview Content */,
 			);
@@ -125,7 +140,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				871D6E112BEE79BC00557547 /* astronauts.json in Resources */,
 				871D6E012BEE6A6300557547 /* Preview Assets.xcassets in Resources */,
+				871D6E122BEE79BC00557547 /* missions.json in Resources */,
 				871D6DFE2BEE6A6300557547 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +155,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				871D6DFC2BEE6A6200557547 /* ContentView.swift in Sources */,
+				871D6E0C2BEE77F700557547 /* Astronaut.swift in Sources */,
 				871D6DFA2BEE6A6200557547 /* MoonshotApp.swift in Sources */,
+				871D6E142BEE7D6900557547 /* Mission.swift in Sources */,
+				871D6E0E2BEE782E00557547 /* Bundle-Decodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
