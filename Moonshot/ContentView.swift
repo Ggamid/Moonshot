@@ -17,7 +17,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack{
             ScrollView{
-                LazyVGrid(columns: columns) {
+                LazyVGrid(columns: columns){
                     ForEach(missions) { mission in
                         NavigationLink{
                             Text("Some info")
@@ -27,19 +27,37 @@ struct ContentView: View {
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 100,height: 100)
+                                    .padding()
+                                    .shadow(color: .white.opacity(0.7), radius: 10)
                                 VStack{
                                     Text("\(mission.displayedName)")
                                         .font(.headline)
-                                    Text(mission.launchDate ?? "N/A")
+                                        .foregroundStyle(.white)
+                                    Text(mission.displayedDate)
                                         .font(.caption)
+                                        .foregroundStyle(.gray)
                                 }
+                                .padding(.vertical)
                                 .frame(maxWidth: .infinity)
+                                .background(.lightBackground)
                             }
+                            .clipShape(.rect(cornerRadius: 10))
+                            .overlay {
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(.lightBackground)
+                            }
+                            
+                            
                         }
+                        
                     }
+                    .padding([.horizontal, .bottom])
                 }
                 .navigationTitle("Moonshot")
+                
             }
+            .background(.darkBackground)
+            .preferredColorScheme(.dark)
         }
     }
 }
