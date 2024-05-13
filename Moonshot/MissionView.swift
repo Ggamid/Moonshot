@@ -52,7 +52,7 @@ struct MissionView: View {
                 HStack{
                     ForEach(crew, id: \.role){ crewMember in
                         NavigationLink{
-                            Text("some info")
+                            AstronautView(astronaut: crewMember.astronaut)
                         } label: {
                             Image(crewMember.astronaut.id)
                                 .resizable()
@@ -109,13 +109,13 @@ extension MissionView{
     
 }
 
-struct TextOverlay: View {
+private struct TextOverlay: View {
     var astronaut: Astronaut
     
     var gradient: LinearGradient {
         .linearGradient(
-            Gradient(colors: [.black.opacity(0.1), .black.opacity(0.4)]),
-                        startPoint: .top,
+            Gradient(colors: [.black.opacity(0.9), .black.opacity(0.1)]),
+                        startPoint: .bottom,
                         endPoint: .center)
     }
     var body: some View {
@@ -127,7 +127,7 @@ struct TextOverlay: View {
                     .bold()
                 Text(astronaut.id)
             }
-            .padding(3)
+            .padding(5)
         }
         .foregroundStyle(.white)
     }
