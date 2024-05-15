@@ -63,8 +63,11 @@ struct LazyGridMission: View {
             .background(.darkBackground)
             .preferredColorScheme(.dark)
             .toolbar{
-                Toggle(isOn: $theme, label: {Text("Switch theme").padding(.leading)})
-                    .toggleStyle(.switch)
+                Button{
+                    theme.toggle()
+                } label: {
+                    Image(systemName: theme ? "square.grid.2x2" : "list.dash")
+                }
             }
         }
 
@@ -75,5 +78,5 @@ struct LazyGridMission: View {
     let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
     let missions: [Mission] = Bundle.main.decode("missions.json")
     
-    return LazyGridMission(theme: .constant(true), missions: missions, astronauts: astronauts)
+    return LazyGridMission(theme: .constant(false), missions: missions, astronauts: astronauts)
 }

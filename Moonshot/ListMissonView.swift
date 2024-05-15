@@ -40,8 +40,15 @@ struct ListMissonView: View {
                 .scrollContentBackground(.hidden)
                 }
                 .toolbar{
-                    Toggle(isOn: $theme, label: {Text("Switch theme").padding(.leading)})
-                        .toggleStyle(.switch)
+//                    Toggle(isOn: $theme, label: {Text("Switch theme").padding(.leading)})
+//                        .toggleStyle(.switch)
+                    Button{
+                        theme.toggle()
+                    } label: {
+                        Image(systemName: !theme ? "list.dash" : "square.grid.2x2")
+                    }
+                    
+
                 }
         }
         .preferredColorScheme(.dark)
